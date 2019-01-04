@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="es">
+	<head>
+		<title>Cloud Life - INGRESAR</title>
+		<meta charset="iso-8559-1">
+		<meta name="author" content="Lucas Antú Fernández">
+		<link rel="stylesheet" href="CSS/Estilos Principal.css">
+		<link rel="stylesheet" href="CSS/Estilos comunes.css">
+		<script type="text/javascript" src="Javascript/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="Javascript/ingresoYregistro.js"></script>
+		<noscript>
+  			<p id="nojs">Los scripts están desabilitados en su navegador, habilítelos para continuar utilizando el sitio.</p>
+ 		</noscript>
+	</head>
+	<body>
+		<header>
+			<h1>Cloud Life</h1>
+			<form>
+				<label for="usuario">Usuario:</label>
+				<input type="text" name="usuario" id="usuario">
+				<label for="contrasena">Contraseña:</label>
+				<input type="password" name="contrasena" id="contrasena">
+				<input class="boton" type="submit" name="ingresar" id="ingresar" value="Ingresar">
+			</form>
+			<br>
+		</header>
+		<section>
+			<form id="fRegistro" method="get">
+				<h2>
+					Registrar nuevo usuario
+				</h2>
+				<div>
+					<label for="nuevoUsuario">Nuevo nombre de usuario: </label>
+					<label for="nuevaContrasena">Nueva contraseña:</label>
+					<label for="repetirContrasena">Repetir contraseña:</label>
+					<label for="correo">Correo electrónico: </label>
+				</div>
+				<div>
+					<input type="text" autocomplete="off" name="nuevoUsuario" id="nuevoUsuario">
+					<input type="password" name="nuevaContrasena" id="nuevaContrasena">
+					<input type="password" name="repetirContrasena" id="repetirContrasena">
+					<input type="text" name="correo" id="correo">
+				</div>
+				<br>
+				<p id="msjErrReg"></p>
+				<input class="boton" type="submit" name="registrar" id="registrar" value="Registrarme">
+			</form>			
+		</section>
+	</body>
+</html>

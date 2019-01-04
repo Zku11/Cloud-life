@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#nojs{
+	font-family: sans-serif;
+	color: #fff;
+	background-color: #f55;
+	text-align: center;
+	font-size: 20px;
+	padding:20px 0px;
+}
+body{
+	font-family: sans-serif;
+}
+header{
+	color: #fff;
+	background-color: #117;
+}
+.resaltado{
+	color: #e60;
+}
+.boton{
+	border: none;
+	font-size: 15px;
+	height: 20px;
+	color: #fff;
+	background-color: #e60;
+	padding: 0 10px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.boton:hover{
+	cursor: pointer;
+	background-color: #f50;
+}
+#limpiador{
+	clear: both;
+}
