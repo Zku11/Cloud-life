@@ -2,7 +2,7 @@
 <html lang="es">
 	<head>
 		<title>Cloud Life</title>
-		<meta charset="iso-8559-1">
+		<meta charset="iso-8859-1">
 		<meta name="author" content="Lucas Antú Fernández">
 		<link rel="stylesheet" href="CSS/Estilos sesion iniciada.css">
 		<link rel="stylesheet" href="CSS/Estilos comunes.css">
@@ -13,28 +13,58 @@
  		</noscript>
  	</head>
  	<body>
+
  		<header>
  			<h1>Cloud Life</h1>
  			<a class="boton" id="cierraSesion">Cerrar sesión</a>
- 			<div id="botonPerfil">
- 				<img src="imgperfil.jpg" height="30px" width="30px">
- 				<span>Perfil usuario</span>
- 				<div id="limpiador"></div>
- 			</div>
+ 			<p>Perfil usuario</p>
  		</header>
- 		<div id="menu">
- 			<form>
- 				<input id="exploraSubir" type="file" name="archivos">
- 			</form>
- 			<a id="subir">Subir archivos</a>
- 			<a>Nueva carpeta</a>
- 			<span></span>
- 			<a>Descargar</a>
- 			<a>Copiar</a>
- 			<a>Mover</a>
- 			<a>Renombrar</a>
- 			<a>Añadir atajo</a>
- 			<a>Eliminar</a>
- 		</div>
+
+ 		<nav>
+ 			<img src="imgs/atras.png" id="volver">
+ 			<p id="infoSeleccionados"></p>
+ 			<div class="limpiador">
+ 		</nav>
+
+ 		<section>
+ 			<div>
+
+ 			</div>
+ 			<div id="visorArchivos">
+ 				<div>
+ 					<img class="selec" src="imgs/noselec.png">
+ 					<img src="imgs/carpeta.png">
+ 					<p>Carpeta</p>
+ 					<div class="limpiador"></div>
+ 				</div>
+ 				<div>
+ 					<img class="selec" src="imgs/noselec.png">
+ 					<img src="imgs/archivo.png">
+ 					<p>Archivo</p>
+ 					<div class="limpiador">
+ 				</div>
+ 			</div>
+ 		</section>
+
+ 		<footer>
+ 			<div id="menu">
+ 				<form id="subirArch">
+ 					<input multiple="true" id="exploraSubir" type="file" name="archivos">
+ 				</form>
+ 				<a class="opcCarpActual" id="subir">Subir archivos</a>
+ 				<a class="opcCarpActual" >Nueva carpeta</a>
+ 				<a class="opcCarpActual" id="selecTodos">Seleccionar todos</a>
+ 				<a class="opcCarpActual" id="pegar">Pegar</a>
+ 				<span></span>
+ 				<a class="opcArch">Descargar</a>
+ 				<a class="opcArch">Copiar</a>
+ 				<a class="opcArch">Mover</a>
+ 				
+ 				<a class="opcArch" id="renombrar">Renombrar</a>
+ 				<a class="opcArch">Añadir atajo</a>
+ 				<a class="opcArch">Eliminar</a>
+ 			</div>
+ 		</footer>
+
  	</body>
 </html>

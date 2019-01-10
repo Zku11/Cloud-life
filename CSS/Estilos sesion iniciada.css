@@ -1,11 +1,16 @@
 header a{
 	float: right;
-	margin: 15px 30px;
+	margin: 20px 30px;
 }
-#botonPerfil{
+header p{
 	display: inline-block;
 	float: right;
-	padding: 0 10px;
+	height: 20px;
+	padding: 20px 10px;
+}
+header p:hover{
+	color: #ddd;
+	cursor: pointer;
 }
 header span{
 	margin-right: 20px;
@@ -27,15 +32,14 @@ h1{
 	font-size: 30px;
 	height: 30px;
 	display: inline-block;
-	padding: 10px 30px;
+	padding: 15px 30px;
 }
-#botonPerfil:hover{
-	background-color: #228;
-	cursor: pointer;
+body{
+	font-size: 14px;
 }
 #menu{
 	text-align: center;
-	background-color: #888;
+	background-color: #666;
 }
 #exploraSubir{
 	display: none;
@@ -44,14 +48,82 @@ h1{
 	height: 20px;
 	display: inline-block;
 	padding: 10px 20px;
-	color: #ddd;
+	color: #fff;
 }
 #menu a:hover{
 	cursor: pointer;
 	background-color: #444;
 }
+#menu a:active{
+	color: #f55;
+}
 #menu span{
 	height: 40px;
 	border-left: 3px solid #ddd;
 	margin: 0 10px;
+}
+#pegar{
+	opacity: 0.3;
+}
+section{
+	height: calc(100vh - 140px);
+	background-color: #eee;
+}
+section > div{
+	float: left;
+	overflow: auto;
+}
+section > div:first-child {
+	width: 20%;
+	height: 100%;
+	background-color: #ddd;
+}
+section > div + div{
+	width: 80%;
+	height: 100%;
+	background-color: #eee;
+}
+section > div + div div{
+	clear: both;
+}
+section > div + div div img{
+	display: inline-block;
+	height: 30px;
+	padding: 5px 0;
+	float: left;
+}
+section > div + div > p{
+	margin-top: 40px;
+	color: #777;
+	font-size: 16px;
+	text-align: center;
+}
+section > div + div div p{
+	float: left;
+	display: inline-block;
+	color: #333;
+	height: 20px;
+	padding: 10px;
+}
+section > div + div div p:hover{
+	cursor: pointer;
+	color: #e60;
+}
+.selec:hover, nav img:hover{
+	cursor: pointer;
+}
+nav{
+	background-color: #666;
+	height: 40px;
+}
+nav img{
+	float: left;
+	padding: 5px;
+	margin-left: 30px;
+}
+nav p{
+	float: right;
+	margin: 10px 30px 0 0;
+	text-align: right;
+	color: #eee;
 }

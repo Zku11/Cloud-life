@@ -38,7 +38,6 @@ function ingresar(e){
 		 	if(status == "success" && data == "exito"){
 		 		window.location.href="Principal.html";
 		 	}
-		 	
 		});
 	}
 }
