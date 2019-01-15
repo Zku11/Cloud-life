@@ -10,10 +10,10 @@ function inicio(){
 		$(this).css("background-color", "#eee");
 	});
 	$("#registrar").click(registrar);
-	$("#nuevoUsuario").bind("focus keyup", nuevoUsuario);
-	$("#nuevaContrasena").bind("focus keyup", nuevaContrasena);
-	$("#repetirContrasena").bind("focus keyup", repetirContrasena);
-	$("#correo").bind("focus keyup", correoElectronico);
+	$("#nuevoUsuario").on("focus keyup", nuevoUsuario);
+	$("#nuevaContrasena").on("focus keyup", nuevaContrasena);
+	$("#repetirContrasena").on("focus keyup", repetirContrasena);
+	$("#correo").on("focus keyup", correoElectronico);
 	msjErrReg = $("#msjErrReg");
 	$("#fRegistro div input").blur(function(){
 		msjErrReg.html("")
